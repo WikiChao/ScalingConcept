@@ -148,8 +148,7 @@
 
 <!-- TEASER + INTRO -->
  <!-- the width should be the same with other element -->
- <img src="./static/images/image.png" class="center-img" style="width: 70%; max-width: 800px; margin: 0 auto; display: block;"/>
-<section class="hero teaser">
+ <section class="hero teaser">
   <h2 class="subtitle has-text-centered">
     <b>tl;dr:</b> We use pretrained text-guided diffusion models<br>to scale up/down concepts in image/audio
   </h2>
@@ -160,6 +159,14 @@
     </video>
   </div> -->
 </section>
+<br>
+
+<div class="columns is-centered has-text-centered image-container">
+  <!-- Default image -->
+  <img src="./static/images/anime/anime1_raw.png" width="50%" alt="Default Image" class="default-image">
+  <!-- Hover image -->
+  <img src="./static/images/anime/anime1_transform.png" width="50%" alt="Hover Image" class="hover-image">
+</div>
 
 
 <!-- OVERVIEW -->
@@ -194,13 +201,6 @@
         </div>
       </div>
     </div>
-    <div class="columns is-centered has-text-centered image-container">
-      <!-- Default image -->
-      <img src="./static/images/anime/anime1_raw.png" width="80%" alt="Default Image" class="default-image">
-      <!-- Hover image -->
-      <img src="./static/images/anime/anime1_transform.png" width="80%" alt="Hover Image" class="hover-image">
-    </div>
-
     <div class="columns is-centered has-text-centered image-container">
       <!-- Default image -->
       <img src="./static/images/anime/anime2_raw.png" width="80%" alt="Default Image" class="default-image">
@@ -281,6 +281,24 @@
   </div>
 </section> -->
 
+<!-- OVERVIEW -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-three-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-guided diffusion models have revolutionized generative tasks by producing high-fidelity content from text descriptions. They have also enabled an editing paradigm where concepts can be replaced through text conditioning (e.g., <i>a dog to a tiger</i>). In this work, we explore a novel approach: instead of replacing a concept, can we enhance or suppress the concept itself? Through an empirical study, we identify a trend where concepts can be decomposed in text-guided diffusion models. Leveraging this insight, we introduce <b>ScalingConcept</b>, a simple yet effective method to scale decomposed concepts up or down in real input without introducing new elements.
+            To systematically evaluate our approach, we present the WeakConcept-10 dataset, where concepts are imperfect and need to be enhanced. More importantly, ScalingConcept enables a variety of novel zero-shot applications across image and audio domains, including tasks such as canonical pose generation and generative sound highlighting or removal. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<img src="./static/images/image.png" class="center-img" style="width: 50%; max-width: 800px; margin: 0 auto; display: block;"/>
 
 <footer class="footer">
   <div class="container is-max-desktop content">
