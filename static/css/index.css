@@ -221,7 +221,7 @@ span.rev {
 
 /* Style for the image container */
 .image-container img {
-  width: 50%; /* Adjust size as needed */
+  /* width: 50%; Adjust size as needed */
   height: auto;
   position: relative;
   transition: opacity 0.3s ease;
