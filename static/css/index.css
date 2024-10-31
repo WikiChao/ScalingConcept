@@ -218,3 +218,28 @@ span.rev {
   margin-bottom: 0rem;
   margin-top: 3rem;
 }
+
+/* Style for the image container */
+.image-container img {
+  width: 50%; /* Adjust size as needed */
+  height: auto;
+  position: relative;
+  transition: opacity 0.3s ease;
+}
+
+/* Hide the hover image by default */
+.image-container .hover-image {
+  display: none;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+/* Show hover image and hide default on hover */
+.image-container:hover .default-image {
+  display: none;
+}
+
+.image-container:hover .hover-image {
+  display: block;
+}
