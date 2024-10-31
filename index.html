@@ -38,6 +38,31 @@
     html {
       scroll-behavior: smooth;
     }
+    .rainbow {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 32px;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+.rainbow_text_animated {
+  background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: rainbow_animation 6s ease-in-out infinite;
+  background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+  0%,100% {
+      background-position: 0 0;
+  }
+
+  50% {
+      background-position: 100% 0;
+  }
+}
   </style>
 
 </head>
@@ -49,26 +74,22 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">Scaling Concept With Text-Guided Diffusion Models</h1>
+          <h1 class="title is-2 publication-title">
+          <span class="rainbow_text_animated" style="vertical-align: middle">Scaling Concept with Text-Guided Diffusion Models</span>
+          </h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://wikichao.github.io/" target="_blank">Chao Huang</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://liangsusan-git.github.io/" target="_blank">Susan Liang</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://yunlong10.github.io/" target="_blank">Yunlong Tang</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.yapengtian.com/" target="_blank">Yapeng Tian</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://anuragkr90.github.io/" target="_blank">Anurag Kumar</a><sup>3</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.cs.rochester.edu/~cxu22/" target="_blank">Chenliang Xu</a><sup>1</sup></span>
+            <span class="author-block"><a href="https://wikichao.github.io/" target="_blank">Chao Huang</a><sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block"><a href="https://liangsusan-git.github.io/" target="_blank">Susan Liang</a><sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block"><a href="https://yunlong10.github.io">Yunlong Tang</a><sup style="color:#6fbf73;">1</sup>,</span>
+            <span class="author-block"><a href="https://www.yapengtian.com/" target="_blank">Yapeng Tian</a><sup style="color:#ed4b82;">2</sup>,</span>
+            <span class="author-block"><a href="https://anuragkr90.github.io/" target="_blank">Anurag Kumar</a><sup style="color:#2d9ffd;">3</sup>,</span>
+            <span class="author-block"><a href="https://www.cs.rochester.edu/~cxu22/" target="_blank">Chenliang Xu</a><sup style="color:#6fbf73;">1</sup></span><br>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Rochester</span>,
-            <span class="author-block"><sup>2</sup>The University of Texas at Dallas</span>,
-            <span class="author-block"><sup>3</sup>Meta Reality Labs Research</span>
+            <span class="author-block"><sup style="color:#6fbf73;">1</sup>University of Rochester</span>,
+            <span class="author-block"><sup style="color:#ed4b82">2</sup>The University of Texas at Dallas</span>,
+              <span class="author-block"><sup style="color:#2d9ffd">3</sup>Meta Reality Labs Research</span>
           </div>
 
           <div class="column has-text-centered" style="padding-bottom:0;">
@@ -127,6 +148,8 @@
 
 
 <!-- TEASER + INTRO -->
+ <!-- the width should be the same with other element -->
+ <img src="./static/images/image.png" class="center-img" style="width: 70%; max-width: 800px; margin: 0 auto; display: block;"/>
 <section class="hero teaser">
   <h2 class="subtitle has-text-centered">
     <b>tl;dr:</b> We use pretrained text-guided diffusion models<br>to scale up/down concepts in image/audio
