@@ -95,7 +95,7 @@ If you use this code for your research, please cite the following work:
       title={Scaling Concept With Text-Guided Diffusion Models}, 
       author={Chao Huang and Susan Liang and Yunlong Tang and Yapeng Tian Anurag Kumar and Chenliang Xu},
       year={2024},
-      eprint={},
+      eprint={2410.24151},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
